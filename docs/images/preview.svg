@@ -1,0 +1,68 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19"/>
+      <stop offset="50%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#030712"/>
+    </linearGradient>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  
+  <!-- Subtle Grid -->
+  <g opacity="0.12" stroke="#fff" stroke-width="1">
+    <line x1="0" y1="105" x2="1200" y2="105"/>
+    <line x1="0" y1="210" x2="1200" y2="210"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/>
+    <line x1="0" y1="420" x2="1200" y2="420"/>
+    <line x1="0" y1="525" x2="1200" y2="525"/>
+  </g>
+
+  <!-- Application Window Mockup -->
+  <g transform="translate(100, 70)" filter="url(#shadow)">
+    <!-- Window Frame -->
+    <rect width="1000" height="490" rx="16" fill="#1e293b" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+    <!-- Top Bar -->
+    <rect width="1000" height="48" rx="16" fill="#0f172a"/>
+    <circle cx="28" cy="24" r="6" fill="#ef4444"/>
+    <circle cx="48" cy="24" r="6" fill="#f59e0b"/>
+    <circle cx="68" cy="24" r="6" fill="#10b981"/>
+    <text x="500" y="29" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="13" font-weight="600" text-anchor="middle">LOGOSTUDIO AI • Prompt to Vector Studio</text>
+
+    <!-- Sidebar controls -->
+    <rect x="24" y="70" width="300" height="396" rx="12" fill="#0f172a" stroke="rgba(255,255,255,0.08)"/>
+    <text x="44" y="105" fill="#e2e8f0" font-family="-apple-system, sans-serif" font-size="15" font-weight="700">Design Parameters</text>
+    
+    <!-- Input prompt mock -->
+    <rect x="44" y="125" width="260" height="42" rx="8" fill="#1e293b" stroke="rgba(255,255,255,0.1)"/>
+    <text x="56" y="151" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="12">"Minimalist geometric falcon logo"</text>
+
+    <!-- Style selector -->
+    <rect x="44" y="185" width="125" height="32" rx="6" fill="#8b5cf6" fill-opacity="0.2" stroke="#8b5cf6"/>
+    <text x="106" y="206" fill="#c4b5fd" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Vector Flat</text>
+    <rect x="179" y="185" width="125" height="32" rx="6" fill="#1e293b" stroke="rgba(255,255,255,0.08)"/>
+    <text x="241" y="206" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="11" text-anchor="middle">Monogram</text>
+
+    <!-- Generate CTA -->
+    <rect x="44" y="400" width="260" height="44" rx="8" fill="url(#primaryGrad)"/>
+    <text x="174" y="427" fill="#fff" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" text-anchor="middle">✨ Generate Vectors</text>
+
+    <!-- Canvas Preview Area -->
+    <rect x="345" y="70" width="630" height="396" rx="12" fill="#0b0f19" stroke="rgba(255,255,255,0.08)"/>
+    
+    <!-- Generated Logo Presentation -->
+    <g transform="translate(660, 240)">
+      <polygon points="0,-70 65,40 -65,40" fill="none" stroke="url(#primaryGrad)" stroke-width="6"/>
+      <circle cx="0" cy="5" r="28" fill="none" stroke="#38bdf8" stroke-width="4"/>
+      <text x="0" y="105" fill="#f8fafc" font-family="-apple-system, sans-serif" font-size="22" font-weight="800" text-anchor="middle" letter-spacing="4">NEXUS VECTORS</text>
+      <text x="0" y="128" fill="#64748b" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" text-anchor="middle" letter-spacing="2">EXPORT SVG • EPS • PNG (300 DPI)</text>
+    </g>
+  </g>
+</svg>

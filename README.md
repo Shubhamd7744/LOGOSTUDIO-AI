@@ -1,73 +1,82 @@
-# Next-Gen AI Logo Generator
+﻿<div align="center">
+  <img src="./docs/images/preview.svg" width="100%" alt="LOGOSTUDIO AI Platform Preview" />
 
-A cutting-edge web application leveraging advanced AI models to generate highly customizable professional-quality logos with intelligent brand identity capabilities.
+  # 🎨 LOGOSTUDIO-AI
+  <p><strong>AI-driven vector branding engine & generative logo customization workspace.</strong></p>
 
-## Features
+  <p>
+    <img src="https://img.shields.io/badge/React-18-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" />
+    <img src="https://img.shields.io/badge/Next.js-App%20Router-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js" />
+    <img src="https://img.shields.io/badge/TypeScript-Strict-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+    <img src="https://img.shields.io/badge/TailwindCSS-v3-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white" alt="Tailwind" />
+    <img src="https://img.shields.io/badge/Vite-Bundler-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite" />
+  </p>
+</div>
 
-- AI-powered logo generation with multiple style options
-- Real-time preview and customization
-- Vector graphics output (SVG)
-- Brand identity system generation
-- Collaborative design tools
-- Professional export options
+---
 
-## Tech Stack
+## 📌 Overview
 
-- **Frontend:** React 18, TypeScript, Tailwind CSS
-- **UI Components:** Radix UI, Shadcn UI
-- **State Management:** Tanstack Query
-- **Form Handling:** React Hook Form
-- **Styling:** Tailwind CSS with custom design system
-- **Routing:** React Router
+**LOGOSTUDIO-AI** bridges high-fidelity UI design and generative AI to create responsive, production-ready brand marks. Instead of raw pixel outputs, this studio produces structured assets customizable across palettes, aspect ratios, and visual weights.
 
-## Getting Started
+### 🌟 Key Capabilities
+- **Iterative AI Prompting:** Transform natural language descriptions into balanced geometric marks.
+- **Dynamic Palette Calibration:** Live SVG path recoloring and gradient mapping without quality loss.
+- **Export Formats:** Direct high-resolution asset export with customizable paddings and backgrounds.
+- **Modular Design System:** Built on top of Radix primitives and styled with Tailwind CSS for accessible interactions.
 
-1. Clone the repository
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Start the development server:
-   ```bash
-   npm run dev
-   ```
-4. Open [http://localhost:5173](http://localhost:5173) in your browser
+---
 
-## Project Structure
+## 🏗️ Architecture & File Structure
 
 ```
-src/
-├── components/     # Reusable UI components
-├── features/       # Feature-specific components
-├── hooks/         # Custom React hooks
-├── lib/           # Utility functions and configurations
-├── pages/         # Application pages
-├── services/      # API and service integrations
-└── types/         # TypeScript type definitions
+LOGOSTUDIO-AI/
+├── public/                  # Static assets & 3D illustrations
+├── src/
+│   ├── components/          # Reusable UI primitives (Radix + Tailwind)
+│   ├── features/            # Feature-driven slices
+│   │   ├── logo-generator/  # Prompt form, preview stage, customization controls
+│   │   └── logo-examples/   # Curated preset library
+│   ├── lib/                 # Core utilities & API abstraction
+│   ├── pages/               # Routed view templates
+│   ├── App.tsx              # Application shell & context providers
+│   └── main.tsx             # Entrypoint
+├── tailwind.config.ts       # Design tokens & layout constraints
+└── vite.config.ts           # Build pipeline configuration
 ```
 
-## Development Roadmap
+---
 
-### Phase 1: Foundation (Months 1-3)
-- Core generation engine
-- Basic customization parameters
-- Initial vector conversion pipeline
-- User account system
+## ⚡ Quick Start
 
-### Phase 2: Advanced Capabilities (Months 4-7)
-- Enhanced AI features
-- Professional tools
-- Platform expansion
+### Prerequisites
+- **Node.js**: `v18.x` or higher
+- **Package Manager**: `npm`, `pnpm`, or `bun`
 
-### Phase 3: Ecosystem Development (Months 8-12)
-- Comprehensive brand system
-- Advanced collaboration
-- Market expansion
+### Installation
+```bash
+# Clone the repository
+git clone https://github.com/Shubhamd7744/LOGOSTUDIO-AI.git
+cd LOGOSTUDIO-AI
 
-## Contributing
+# Install dependencies
+npm install
 
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
+# Start development server
+npm run dev
+```
 
-## License
+Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+---
+
+## 🛡️ Engineering Decisions
+1. **Feature-First Architecture:** Keeps domain logic (`features/logo-generator`) decoupled from generic design components (`components/ui`).
+2. **Type-Safe Props:** Strict TypeScript interfaces for all logo attributes (geometry, typography hierarchy, SVG paths).
+3. **Optimistic Previews:** Instant client-side state manipulation during color and dimension changes.
+
+---
+
+<div align="center">
+  <sub>Maintained by <a href="https://github.com/Shubhamd7744">Shubham Dutta</a> • UI/UX Designer & Frontend Developer</sub>
+</div>
